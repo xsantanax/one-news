@@ -5,12 +5,13 @@ const postsOutline = "/img/posts-outline.png"
 
 import styles from "@/styles/sidebar.module.sass"
 import SidebarItem from "./SidebarItem"
+import UserImage from "./UserImage"
 
 // const Sidebar = ({ onClose, setIsContactModalOpen }: any) => {
 const Sidebar = ({ onClose }: any) => {
   return (
     <div className={styles.container} onClick={onClose}>
-      {/* <UserImage /> */}
+      <UserImage />
       <div className={styles.sidebarItems}>
         <SidebarItem
           icon={postsOutline}
