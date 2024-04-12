@@ -35,9 +35,13 @@ The following tools have been chosen due to their robustness, simplicity, mainte
 - [MongoDB] - Chosen for database management due to its robustness and scalability, providing efficient handling of complex data structures and seamless integration with Node.js for a streamlined development process.
 -->
 
+## System Design
+
+System design is the system to be built, what the system needs to fulfill it's role, its components and how they are connected.
+
 ## Architecture
 
-This solution architecture is based on the following requirements:
+Software architecture is how the system design is implemented. The chosen technologies and why they were chosen.This solution architecture is based on the following requirements:
 
 Functional Requirements
 
@@ -48,13 +52,15 @@ Functional Requirements
 
 Non-Functional Requirements
 
-5. Security
-6. Scalability
-7. Performance
+5. Robustness
+6. Security
+7. Scalability
+8. Maintainability
+9. Performance
 
 ### 1. Client-Side (Frontend) Architecture:
 
-- [React](https://react.dev/) - Chosen as the base frontend framework due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient, bringing simplicity, robustness and scalability to the software.
+- [React](https://react.dev/) - Chosen as the base frontend framework for building user interfaces due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient, bringing simplicity, robustness and scalability to the software.
 
 - [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing and SEO capabilities, improving performance, scalability and . It is also recommended by React.
   [`(See React recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
@@ -68,6 +74,8 @@ Non-Functional Requirements
 ### 2. Server-Side (Backend) Architecture:
 
 - [Node] - Chosen for creating the API, since it allows for building scalable and efficient server-side applications using JavaScript.
+
+- [Express] - Chosen for its simplicity and flexibility in building web applications and APIs on top of Node.js. It provides a minimalist framework that allows developers to structure their applications in a modular and organized way.
 
 - [MongoDB] - Chosen for storing and managing data due to its robustness and scalability, with its NoSQL model providing efficient handling of complex data structures and seamless integration with Node.js.
 
@@ -105,7 +113,7 @@ Non-Functional Requirements
 
 ### More
 
-This architecture combines frontend and backend technologies effectively, incorporates testing, deployment, and security practices, and focuses on scalability and maintainability, making it well-suited for developing modern web applications.
+This architecture combines frontend and backend technologies effectively, incorporating testing, deployment, and security practices, and focuses on robustness, security, scalability, maintainability, and performance, making it well-suited for developing modern web applications.
 
 The frontend architecture can easily be upgraded to a microfrontend structure as business scales.
 
