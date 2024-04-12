@@ -39,6 +39,8 @@ The following tools have been chosen due to their robustness, simplicity, mainte
 
 System design is the system to be built, what the system needs to fulfill it's role, its components and how they are connected.
 
+You can see the system design here https://miro.com/app/board/uXjVKcPR8m4=/?share_link_id=25333518902
+
 ## Architecture
 
 Software architecture is how the system design is implemented. The chosen technologies and why they were chosen.This solution architecture is based on the following requirements:
