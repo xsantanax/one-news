@@ -11,7 +11,7 @@ function Header() {
           <Link href="/">
             <Image
               className={styles.logo}
-              src="/one-news.jpg"
+              src="/img/one-news.jpg"
               alt="logo"
               width={60}
               height={60}
