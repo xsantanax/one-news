@@ -1,11 +1,11 @@
 "use client"
 // import Link from 'next/link'
+import Image from "next/image"
 import { useState, useRef } from "react"
 
-// import useClickOutside from 'hooks/useClickOutside'
+import useClickOutside from "@/hooks/useClickOutside"
 // import { usePoliticians } from 'hooks/usePoliticians'
 import styles from "@/styles/searchbar.module.sass"
-import Image from "next/image"
 
 // const politicianDefault = '/img/politician-default.png'
 
@@ -19,7 +19,7 @@ const Searchbar = () => {
   //   )
 
   const containerRef = useRef(null)
-  //   useClickOutside(containerRef, () => setDisplay(false))
+  useClickOutside(containerRef, () => setDisplay(false))
 
   return (
     <div className={styles.container} ref={containerRef}>
