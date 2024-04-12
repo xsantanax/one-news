@@ -2,6 +2,7 @@ import styles from "@/styles/header.module.sass"
 import Image from "next/image"
 import Link from "next/link"
 import Searchbar from "./Searchbar"
+import MenuButton from "./MenuButton"
 
 function Header() {
   return (
@@ -21,6 +22,7 @@ function Header() {
         <div className={styles.middleNavbar}>
           <Searchbar />
           {/* <MenuButton setIsContactModalOpen={setIsContactModalOpen} /> */}
+          <MenuButton />
         </div>
       </div>
     </div>
