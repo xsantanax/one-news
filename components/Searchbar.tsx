@@ -1,12 +1,9 @@
 "use client"
-// import Link from 'next/link'
 import Image from "next/image"
 import { useState, useRef } from "react"
-
 import useClickOutside from "@/hooks/useClickOutside"
-// import { usePoliticians } from 'hooks/usePoliticians'
 import styles from "@/styles/searchbar.module.sass"
-
+// import { usePoliticians } from 'hooks/usePoliticians'
 // const politicianDefault = '/img/politician-default.png'
 
 const Searchbar = () => {
