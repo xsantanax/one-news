@@ -18,7 +18,14 @@
       border: 2px solid #ccc
       margin: -1px -1px
     
-    &:focus + .label
+    &:focus + .label 
+      font-weight: bold
+      padding: 0 4px 0 6px
+      font-size: 12px
+      transform: translate(6px, -30px)
+      background-color: black
+
+    &:not(:placeholder-shown) + .label
       font-weight: bold
       padding: 0 4px 0 6px
       font-size: 12px

@@ -19,6 +19,7 @@ const Input = ({ label, value, htmlType = "text", name, onChange }: Props) => {
         type={htmlType}
         name={name}
         onChange={onChange}
+        placeholder=" "
       />
       <div className={styles.label}>{label}</div>
       <div className={styles.errorContainer}></div>
