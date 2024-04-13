@@ -1,9 +1,10 @@
-import styles from "@/styles/app.module.sass"
+import PostNewsInvite from "@/components/PostNewsInvite"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>News</div>
-    </main>
+    <>
+      <PostNewsInvite />
+      News
+    </>
   )
 }
