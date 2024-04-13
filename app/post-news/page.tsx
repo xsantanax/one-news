@@ -2,7 +2,7 @@
 // import { useVerifiedNews } from "@/hooks/useVerifiedNews"
 import { useState } from "react"
 import axios from "axios"
-import styles from "@/styles/postNews.module.sass"
+import styles from "./postNews.module.sass"
 import Input from "@/components/Input"
 import Button from "@/components/Button"
 

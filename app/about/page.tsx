@@ -1,4 +1,4 @@
-import styles from "@/styles/about.module.sass"
+import styles from "./about.module.sass"
 
 export default function About() {
   return (

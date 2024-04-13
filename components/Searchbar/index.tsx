@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { useState, useRef } from "react"
 import useClickOutside from "@/hooks/useClickOutside"
-import styles from "@/styles/searchbar.module.sass"
+import styles from "./searchbar.module.sass"
 // import { usePoliticians } from 'hooks/usePoliticians'
 // const politicianDefault = '/img/politician-default.png'
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
-import styles from "@/styles/layout.module.sass"
 import Header from "@/components/Header"
 import Sidebar from "@/components/Sidebar"
+import styles from "./layout.module.sass"
 // import { VerifiedNewsProvider } from "@/hooks/useVerifiedNews"
 
 const inter = Inter({ subsets: ["latin"] })

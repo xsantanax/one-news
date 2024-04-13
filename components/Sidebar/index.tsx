@@ -3,9 +3,9 @@
 // import SidebarMail from "components/SidebarMail"
 const postsOutline = "/img/posts-outline.png"
 
-import styles from "@/styles/sidebar.module.sass"
-import SidebarItem from "./SidebarItem"
-import UserImage from "./UserImage"
+import styles from "./sidebar.module.sass"
+import SidebarItem from "../SidebarItem"
+import UserImage from "../UserImage"
 
 // const Sidebar = ({ onClose, setIsContactModalOpen }: any) => {
 const Sidebar = ({ onClose }: any) => {

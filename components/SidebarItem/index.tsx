@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styles from "@/styles/sidebarItem.module.sass"
+import styles from "./sidebarItem.module.sass"
 import Image from "next/image"
 
 type Props = {

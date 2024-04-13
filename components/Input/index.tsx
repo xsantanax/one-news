@@ -1,5 +1,5 @@
 import { ChangeEvent } from "react"
-import styles from "@/styles/input.module.sass"
+import styles from "./input.module.sass"
 
 export type Props = {
   label?: string

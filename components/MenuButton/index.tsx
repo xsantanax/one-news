@@ -3,7 +3,7 @@ import { useState } from "react"
 // import Modal from 'components/Modal'
 // import Sidebar from 'components/Sidebar'
 import Image from "next/image"
-import styles from "@/styles/menuButton.module.sass"
+import styles from "./menuButton.module.sass"
 import { ChevronDownIcon } from "@heroicons/react/24/solid"
 
 // const MenuButton = ({ setIsContactModalOpen }: any) => {

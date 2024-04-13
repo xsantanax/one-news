@@ -1,4 +1,4 @@
-import styles from "@/styles/postNewsInvite.module.sass"
+import styles from "./postNewsInvite.module.sass"
 import Link from "next/link"
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid"
 

@@ -1,8 +1,8 @@
-import styles from "@/styles/header.module.sass"
+import styles from "./header.module.sass"
 import Image from "next/image"
 import Link from "next/link"
-import Searchbar from "./Searchbar"
-import MenuButton from "./MenuButton"
+import Searchbar from "../Searchbar"
+import MenuButton from "../MenuButton"
 
 function Header() {
   return (

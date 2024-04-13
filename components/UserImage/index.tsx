@@ -1,7 +1,7 @@
 // import Link from "next/link"
 // import { useAuth } from "hooks/useAuth"
 // const userDefault = "/img/usuario-default.png"
-import styles from "@/styles/userImage.module.sass"
+import styles from "./userImage.module.sass"
 
 // const UserImage = () => {
 //   const { user, authenticated, setIsAuthModalOpen, loadingUser }: any =
