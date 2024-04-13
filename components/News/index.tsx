@@ -19,14 +19,14 @@ const News = ({ news }: any) => {
   return (
     <div className={styles.container}>
       {/* <AuthorHeader news={news} /> */}
-      <Link href={news.url}>
+      <Link href={news.url} target="_blank">
         {/* <a target="_blank" rel="noopener noreferrer"> */}
         <Image
           className={styles.image}
           src={image}
           alt=""
-          width={500}
-          height={400}
+          width={600}
+          height={600}
         />
         <div className={styles.url}>
           {url}
