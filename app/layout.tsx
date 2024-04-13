@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <VerifiedNewsProvider> */}
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Header />
         <div className={styles.desktopBody}>
           <div className={styles.desktopSidebar}>
