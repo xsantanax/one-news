@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import styles from "@/styles/layout.module.sass"
 
+import styles from "@/styles/layout.module.sass"
 import Header from "@/components/Header"
 import Sidebar from "@/components/Sidebar"
 
@@ -28,7 +28,7 @@ export default function RootLayout({
             {/* <Sidebar setIsContactModalOpen={setIsContactModalOpen} /> */}
             <Sidebar />
           </div>
-          <div className={styles.content}>{children}</div>
+          <main className={styles.content}>{children}</main>
         </div>
       </body>
     </html>

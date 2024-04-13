@@ -1,4 +1,4 @@
-import styles from "@/styles/app.module.sass"
+import styles from "@/styles/about.module.sass"
 
 export default function Home() {
   return (

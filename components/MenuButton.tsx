@@ -4,6 +4,7 @@ import { useState } from "react"
 // import Sidebar from 'components/Sidebar'
 import Image from "next/image"
 import styles from "@/styles/menuButton.module.sass"
+import { ChevronDownIcon } from "@heroicons/react/24/solid"
 
 // const MenuButton = ({ setIsContactModalOpen }: any) => {
 const MenuButton = () => {
@@ -15,7 +16,7 @@ const MenuButton = () => {
         className={styles.container}
         onClick={() => setIsMobileMenuOpen(true)}
       >
-        <Image src="/img/chevron-down.svg" alt="" width={22} height={22} />
+        <ChevronDownIcon width={23} height={23} />
       </div>
 
       {/* {isMobileMenuOpen && (
