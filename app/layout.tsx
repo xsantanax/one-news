@@ -5,7 +5,7 @@ import "./globals.css"
 import Header from "@/components/Header"
 import Sidebar from "@/components/Sidebar"
 import styles from "./layout.module.sass"
-// import { VerifiedNewsProvider } from "@/hooks/useVerifiedNews"
+import { AuthProvider } from "@/hooks/useAuth"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,18 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <VerifiedNewsProvider> */}
       <body className={inter.className} suppressHydrationWarning={true}>
-        <Header />
-        <div className={styles.desktopBody}>
-          <div className={styles.desktopSidebar}>
-            {/* <Sidebar setIsContactModalOpen={setIsContactModalOpen} /> */}
-            <Sidebar />
+        <AuthProvider>
+          <Header />
+          <div className={styles.desktopBody}>
+            <div className={styles.desktopSidebar}>
+              {/* <Sidebar setIsContactModalOpen={setIsContactModalOpen} /> */}
+              <Sidebar />
+            </div>
+            <main className={styles.content}>{children}</main>
           </div>
-          <main className={styles.content}>{children}</main>
-        </div>
+        </AuthProvider>
       </body>
-      {/* </VerifiedNewsProvider> */}
     </html>
   )
 }
