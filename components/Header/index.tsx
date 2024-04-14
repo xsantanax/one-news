@@ -8,11 +8,12 @@ function Header() {
   return (
     <div>
       <div className={styles.navbar}>
-        <div className={styles.leftNavbar}>
-          <Link href="/">
+        <Link href="/">
+          <div className={styles.leftNavbar}>
             <GlobeAltIcon className={styles.logo} width={32} height={32} />
-          </Link>
-        </div>
+            <div className={styles.logoText}>One News</div>
+          </div>
+        </Link>
         <div className={styles.middleNavbar}>
           <Searchbar />
           {/* <MenuButton setIsContactModalOpen={setIsContactModalOpen} /> */}
