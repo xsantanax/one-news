@@ -5,8 +5,12 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "s2-g1.glbimg.com",
-        port: "",
-        // pathname: "/account123/**",
+        // port: "",
+        // pathname: "",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
       },
     ],
   },

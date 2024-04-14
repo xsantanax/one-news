@@ -54,41 +54,43 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       user.email = firebaseUser.providerData[0].email
     }
     setAuthHeaders(user.accessToken)
+
+    completeLogin(user.accessToken, user)
     //check if email is already in firestore
-    await axios
-      .get(`user/${user.email}/email`)
-      .then((res) => {
-        const isUserRegistered = res.data
-        if (isUserRegistered) {
-          // user already in firestore
-          axios
-            .get("/user")
-            .then((res) => {
-              const resUser = res.data
-              completeLogin(user.accessToken, resUser)
-            })
-            .catch((err) => console.log(err))
-        } else {
-          //no user in firestore, need to register
-          axios
-            .post("/firebaseSignup", user)
-            .then(async (res) => {
-              //save provider user image in firebase storage
-              // const urlData = await fetch(user.photoURL)
-              // const blob = await urlData.blob()
-              // const file = new File(
-              //   [blob],
-              //   user.uid + Math.round(Math.random() * 999999999999) + '.' + blob.type.split('/')[1],
-              //   { type: blob.type }
-              // )
-              // await uploadUserImage(file)
-              const newUser = { ...res.data, image: "" }
-              completeLogin(user.accessToken, newUser)
-            })
-            .catch((err) => console.log(err))
-        }
-      })
-      .catch((err) => console.log(err))
+    // await axios
+    //   .get(`user/${user.email}/email`)
+    //   .then((res) => {
+    //     const isUserRegistered = res.data
+    //     if (isUserRegistered) {
+    //       // user already in firestore
+    //       axios
+    //         .get("/user")
+    //         .then((res) => {
+    //           const resUser = res.data
+    //           completeLogin(user.accessToken, resUser)
+    //         })
+    //         .catch((err) => console.log(err))
+    //     } else {
+    //       //no user in firestore, need to register
+    //       axios
+    //         .post("/firebaseSignup", user)
+    //         .then(async (res) => {
+    //           //save provider user image in firebase storage
+    //           // const urlData = await fetch(user.photoURL)
+    //           // const blob = await urlData.blob()
+    //           // const file = new File(
+    //           //   [blob],
+    //           //   user.uid + Math.round(Math.random() * 999999999999) + '.' + blob.type.split('/')[1],
+    //           //   { type: blob.type }
+    //           // )
+    //           // await uploadUserImage(file)
+    //           const newUser = { ...res.data, image: "" }
+    //           completeLogin(user.accessToken, newUser)
+    //         })
+    //         .catch((err) => console.log(err))
+    //     }
+    //   })
+    //   .catch((err) => console.log(err))
   }
 
   const handleLogout = () => {

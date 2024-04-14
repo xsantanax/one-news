@@ -1,31 +1,53 @@
 "use client"
-import Link from "next/link"
 import { useAuth } from "@/hooks/useAuth"
 import styles from "./userImage.module.sass"
 import Image from "next/image"
+import AuthModal from "../AuthModal"
+import router from "next/router"
 
 const UserImage = () => {
-  const { user, authenticated, setIsAuthModalOpen, loadingUser }: any =
-    useAuth()
+  const {
+    user,
+    authenticated,
+    setIsAuthModalOpen,
+    loadingUser,
+    isAuthModalOpen,
+  }: any = useAuth()
+
+  console.log("user", user)
 
   return (
     <div className={styles.container}>
-      {loadingUser ? (
-        <div className={styles.circle}>
-          <img src="/img/dots.svg" width={80} height={20} />
-        </div>
-      ) : authenticated ? (
-        <Link href="/user">
+      <div className={styles.circle}>
+        {loadingUser ? (
           <Image
-            className={styles.image}
-            src={user.userData?.image || "/img/user-default.png"}
-            alt=""
+            src="/img/dots-white.svg"
+            width={60}
+            height={15}
+            alt="loading"
           />
-        </Link>
-      ) : (
-        <div className={styles.noUser} onClick={() => setIsAuthModalOpen(true)}>
-          Entrar
-        </div>
+        ) : authenticated ? (
+          <Image
+            width={88}
+            height={88}
+            className={styles.image}
+            // src={user.userData?.image || "/img/user-default.png"}
+            src={user.photoURL || "/img/user-default.png"}
+            alt=""
+            onClick={() => router.push("/user")}
+          />
+        ) : (
+          <div
+            className={styles.noUser}
+            onClick={() => setIsAuthModalOpen(true)}
+          >
+            Entrar
+          </div>
+        )}
+      </div>
+
+      {isAuthModalOpen && (
+        <AuthModal onClose={() => setIsAuthModalOpen(false)} />
       )}
     </div>
   )
