@@ -1,5 +1,4 @@
 import News from "@/components/News"
-import PostNewsInvite from "@/components/PostNewsInvite"
 
 let mockNews = {
   image:
@@ -34,7 +33,6 @@ let mockNews3 = {
 export default function Home() {
   return (
     <>
-      <PostNewsInvite />
       {/* {news.map((news: any, index: number) => ( */}
       {/* <News key={index} news={news} /> */}
       {/* ))} */}

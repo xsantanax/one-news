@@ -3,6 +3,7 @@ import { useState } from "react"
 import styles from "./postNews.module.sass"
 import Input from "@/components/Input"
 import Button from "@/components/Button"
+import PostNewsInvite from "@/components/PostNewsInvite"
 
 export default function PostNews() {
   const [url, setUrl] = useState("")
@@ -33,6 +34,7 @@ export default function PostNews() {
           </div>
         </div>
       </form>
+      <PostNewsInvite />
     </>
   )
 }
