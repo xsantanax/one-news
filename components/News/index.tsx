@@ -20,7 +20,7 @@ const News = ({ news }: any) => {
   // const { image, title, softTitle, url } = news.newsData
   const { image, title, softTitle, url } = news
   return (
-    <div>
+    <div className={styles.container}>
       {/* <AuthorHeader news={news} /> */}
       {/* <a target="_blank" rel="noopener noreferrer"> */}
       <Link href={news.url} target="_blank">
@@ -40,7 +40,6 @@ const News = ({ news }: any) => {
           <div className={styles.title}>{title}</div>
           {softTitle && <div className={styles.softTitle}>{softTitle}</div>}
         </div>
-        {/* </a> */}
       </Link>
 
       <div className={styles.footer}>
