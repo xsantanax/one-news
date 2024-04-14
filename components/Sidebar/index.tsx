@@ -13,11 +13,7 @@ const Sidebar = ({ onClose }: any) => {
     <div className={styles.container} onClick={onClose}>
       <UserImage />
       <div className={styles.sidebarItems}>
-        <SidebarItem
-          icon={postsOutline}
-          text={"Todas as notícias"}
-          linkTo={"/"}
-        />
+        <SidebarItem icon={postsOutline} text={"Todas"} linkTo={"/"} />
         <SidebarItem icon={postsOutline} text={"Política"} linkTo={"/"} />
         <SidebarItem icon={postsOutline} text={"Esportes"} linkTo={"/"} />
         <SidebarItem icon={postsOutline} text={"Economia"} linkTo={"/"} />
