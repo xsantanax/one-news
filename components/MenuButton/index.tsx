@@ -1,10 +1,9 @@
 "use client"
 import { useState } from "react"
-// import Modal from 'components/Modal'
-// import Sidebar from 'components/Sidebar'
-import Image from "next/image"
-import styles from "./menuButton.module.sass"
 import { ChevronDownIcon } from "@heroicons/react/24/solid"
+import Sidebar from "../Sidebar"
+import Modal from "../Modal"
+import styles from "./menuButton.module.sass"
 
 // const MenuButton = ({ setIsContactModalOpen }: any) => {
 const MenuButton = () => {
@@ -19,18 +18,17 @@ const MenuButton = () => {
         <ChevronDownIcon width={23} height={23} />
       </div>
 
-      {/* {isMobileMenuOpen && (
+      {isMobileMenuOpen && (
         <Modal
           onClose={() => setIsMobileMenuOpen(false)}
-          backgroundColor="#222"
           content={
             <Sidebar
               onClose={() => setIsMobileMenuOpen(false)}
-              setIsContactModalOpen={setIsContactModalOpen}
+              // setIsContactModalOpen={setIsContactModalOpen}
             />
           }
         />
-      )} */}
+      )}
     </>
   )
 }
