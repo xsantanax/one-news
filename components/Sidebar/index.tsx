@@ -23,7 +23,11 @@ const Sidebar = ({ onClose }: any) => {
         <SidebarItem icon={postsOutline} text={"Economia"} linkTo={"/"} />
         <SidebarItem icon={postsOutline} text={"Meio Ambiente"} linkTo={"/"} />
         <SidebarItem icon={postsOutline} text={"One News"} linkTo={"/about"} />
-
+        <SidebarItem
+          icon={postsOutline}
+          text={"Post News"}
+          linkTo={"/post-news"}
+        />
         {/* <SidebarMail setIsContactModalOpen={setIsContactModalOpen} /> */}
         {/* <LogoutButton /> */}
       </div>
