@@ -1,8 +1,8 @@
 import styles from "./header.module.sass"
-import Image from "next/image"
 import Link from "next/link"
 import Searchbar from "../Searchbar"
 import MenuButton from "../MenuButton"
+import { GlobeAltIcon } from "@heroicons/react/24/outline"
 
 function Header() {
   return (
@@ -10,13 +10,7 @@ function Header() {
       <div className={styles.navbar}>
         <div className={styles.leftNavbar}>
           <Link href="/">
-            <Image
-              className={styles.logo}
-              src="/img/one-news.jpg"
-              alt="logo"
-              width={60}
-              height={60}
-            />
+            <GlobeAltIcon className={styles.logo} width={32} height={32} />
           </Link>
         </div>
         <div className={styles.middleNavbar}>
