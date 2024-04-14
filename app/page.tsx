@@ -1,6 +1,7 @@
 import News from "@/components/News"
 
 let mockNews = {
+  slug: "news1",
   image:
     "https://s2-g1.glbimg.com/TnPc-VDEQ3ildNS8mkiWDQ78D2s=/0x0:1200x1039/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/a/w/vMafBrQ6GQqQyIhXisUw/evolucao-do-pib-ano-a-ano.png",
   title:
@@ -11,6 +12,7 @@ let mockNews = {
 }
 
 let mockNews2 = {
+  slug: "news2",
   image:
     "https://s2-g1.glbimg.com/YsJnvJc_tInYv8PBgB86RmUSUB0=/0x0:1029x599/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/L/W/RrFRaLS5y5uVVuQ0tqbA/1712664572250071.jpg",
   title:
@@ -21,6 +23,7 @@ let mockNews2 = {
 }
 
 let mockNews3 = {
+  slug: "news3",
   image:
     "https://s2-g1.glbimg.com/JF_j2lR0Wm2g6NX2MGA2GnUbA_g=/0x0:792x483/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/7/b/52pzA1T0y8cIBi2GU9KQ/predio-mp-sp.jpg",
   title:

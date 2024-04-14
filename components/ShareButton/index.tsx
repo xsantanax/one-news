@@ -1,11 +1,11 @@
 "use client"
 import { useState } from "react"
-// import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { CopyToClipboard } from "react-copy-to-clipboard"
 // import { WhatsappIcon, WhatsappShareButton } from 'react-share'
 import Image from "next/image"
-// import Modal from 'components/Modal'
 import { NewsProps } from "@/types/api"
 import styles from "./shareButton.module.sass"
+import Modal from "../Modal"
 
 const ShareButton = ({ news }: { news: NewsProps }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -22,16 +22,18 @@ const ShareButton = ({ news }: { news: NewsProps }) => {
           </WhatsappShareButton> */}
         </div>
 
-        {/* <CopyToClipboard text={url} onCopy={() => setIsCopied(true)}> */}
-        <div className={styles.shareItem}>
-          <div className={styles.linkWrap}>
-            <Image src={"/img/link.png"} width={18} height={18} alt="" />
+        <CopyToClipboard text={url} onCopy={() => setIsCopied(true)}>
+          <div className={styles.shareItem}>
+            <div className={styles.linkWrap}>
+              <Image src={"/img/link.png"} width={18} height={18} alt="" />
+            </div>
           </div>
-        </div>
-        {/* </CopyToClipboard> */}
+        </CopyToClipboard>
       </div>
 
-      {/* {isCopied && <S.CopySuccess>Link copiado com sucesso.</S.CopySuccess>} */}
+      {isCopied && (
+        <div className={styles.copySuccess}>Link copiado com sucesso.</div>
+      )}
     </>
   )
   return (
@@ -49,7 +51,7 @@ const ShareButton = ({ news }: { news: NewsProps }) => {
           alt="share"
         />
       </div>
-      {/* {isModalOpen && (
+      {isModalOpen && (
         <Modal
           onClose={() => {
             setIsModalOpen(false)
@@ -58,7 +60,7 @@ const ShareButton = ({ news }: { news: NewsProps }) => {
           title="Compartilhar"
           content={modalContent}
         />
-      )} */}
+      )}
     </>
   )
 }
