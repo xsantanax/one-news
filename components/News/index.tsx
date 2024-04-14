@@ -7,6 +7,7 @@ import Link from "next/link"
 // import { NewsProps } from 'types/api'
 import styles from "./news.module.sass"
 import Image from "next/image"
+import ShareButton from "../ShareButton"
 
 // type Props = {
 //   news: NewsProps
@@ -17,7 +18,7 @@ const News = ({ news }: any) => {
   // const { image, title, softTitle, url } = news.newsData
   const { image, title, softTitle, url } = news
   return (
-    <div className={styles.container}>
+    <div>
       {/* <AuthorHeader news={news} /> */}
       <Link href={news.url} target="_blank">
         {/* <a target="_blank" rel="noopener noreferrer"> */}
@@ -46,9 +47,9 @@ const News = ({ news }: any) => {
       </Link>
 
       <div className={styles.footer}>
-        {/* <LikeButton news={news} />
-        <CommentButton news={news} />
-        <ShareButton news={news} /> */}
+        {/* <LikeButton news={news} /> */}
+        {/* <CommentButton news={news} /> */}
+        <ShareButton news={news} />
         footer
       </div>
     </div>

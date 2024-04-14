@@ -1,6 +1,6 @@
 export type NewsData = {
   url: string
-  // slug: string
+  slug: string
   image: string
   title: string
   softTitle?: string
@@ -8,7 +8,7 @@ export type NewsData = {
 }
 
 export type UserData = {
-  // slug: string
+  slug: string
   image: string
   name: string
 }
@@ -22,7 +22,7 @@ export type CommentData = {
 
 export type NewsProps = {
   url: string
-  // slug: string
+  slug: string
   newsData: NewsData
   userData: UserData
   likes?: [UserData]
@@ -30,7 +30,7 @@ export type NewsProps = {
 }
 export type UserProps = {
   email: string
-  // slug: string
+  slug: string
   userData: UserData
   likes?: [NewsData]
 }
