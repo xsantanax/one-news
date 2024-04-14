@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
-// import { WhatsappIcon, WhatsappShareButton } from 'react-share'
+import { WhatsappIcon, WhatsappShareButton } from "react-share"
 import Image from "next/image"
 import { NewsProps } from "@/types/api"
 import styles from "./shareButton.module.sass"
@@ -17,9 +17,9 @@ const ShareButton = ({ news }: { news: NewsProps }) => {
     <>
       <div className={styles.dialogContentWrap}>
         <div className={styles.shareItem}>
-          {/* <WhatsappShareButton url={url}>
+          <WhatsappShareButton url={url}>
             <WhatsappIcon size={40} round={true} />
-          </WhatsappShareButton> */}
+          </WhatsappShareButton>
         </div>
 
         <CopyToClipboard text={url} onCopy={() => setIsCopied(true)}>
