@@ -8,6 +8,7 @@ import Link from "next/link"
 import styles from "./news.module.sass"
 import Image from "next/image"
 import ShareButton from "../ShareButton"
+import CommentButton from "../CommentButton"
 
 // type Props = {
 //   news: NewsProps
@@ -48,9 +49,8 @@ const News = ({ news }: any) => {
 
       <div className={styles.footer}>
         {/* <LikeButton news={news} /> */}
-        {/* <CommentButton news={news} /> */}
+        <CommentButton news={news} />
         <ShareButton news={news} />
-        footer
       </div>
     </div>
   )
