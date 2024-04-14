@@ -22,15 +22,10 @@ const News = ({ news }: any) => {
   return (
     <div>
       {/* <AuthorHeader news={news} /> */}
+      {/* <a target="_blank" rel="noopener noreferrer"> */}
       <Link href={news.url} target="_blank">
-        {/* <a target="_blank" rel="noopener noreferrer"> */}
-        <Image
-          className={styles.image}
-          src={image}
-          alt=""
-          width={600}
-          height={600}
-        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className={styles.image} src={image} alt="" />
         <div className={styles.url}>
           {url}
           {/* <LinesEllipsis
