@@ -1,4 +1,4 @@
-## Chat Interface
+## One News
 
 This is a simple news interface project designed to showcase frontend engineering experience.
 
