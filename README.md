@@ -1,49 +1,22 @@
 ## Chat Interface
 
-This is a simple web chat interface project designed to showcase frontend engineering experience.
+This is a simple news interface project designed to showcase frontend engineering experience.
 
 ### Live Demo
 
-You can check the app live demo at [https://chat-interface-xsantanax.vercel.app](https://chat-interface-xsantanax.vercel.app).
+You can check the app live demo at [https://one-news-xsantanax.vercel.app](https://one-news-xsantanax.vercel.app).
 
 You can also run it in your machine. First, run the development server. (`npm run dev` or `yarn dev`)
 
 Then, open [http://localhost:3000](http://localhost:3000) in your web browser to see the result.
 
-<!--
-### Stack Choices
-
-The following tools have been chosen due to their robustness, simplicity, maintenance, performance, security and scalability.
-
-- [Javascript] - Chosen as language for its compatibility with other chosen frameworks and its widespread use in web development.
-
-- [React](https://react.dev/) - Chosen as the base frontend framework due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient.
-
-- [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing capabilities, improving performance and SEO. It is also recommended by React.
-  [`(See React recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
-
-- [TypeScript](https://www.typescriptlang.org/) - Chosen for type safety, which helps catch errors during development and improves code quality and maintainability.
-
-- [ContextAPI](https://react.dev/reference/react/createContext) - Chosen for state management.
-
-- [SASS](https://sass-lang.com) - Chosen for styling due to its features like variables, mixins, nesting, and simpler indentation syntax, which make styling more organized and maintainable.
-
-- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Chosen for testing the application, with Jest as the testing framework (test runner) and React Testing Library for testing React components.
-
-- [Node] - Chosen for creating the API, since it allows for building scalable and efficient server-side applications using JavaScript.
-
-- [MongoDB] - Chosen for database management due to its robustness and scalability, providing efficient handling of complex data structures and seamless integration with Node.js for a streamlined development process.
--->
-
-## System Design
+## System Design and Software Architecture
 
 System design is the system to be built, what the system needs to fulfill it's role, its components and how they are connected.
 
-You can see the system design here https://miro.com/app/board/uXjVKcPR8m4=/?share_link_id=25333518902
+You can see the system design here: https://miro.com/app/board/uXjVKcPR8m4=/?share_link_id=25333518902
 
-## Architecture
-
-Software architecture is how the system design is implemented. The chosen technologies and why they were chosen.This solution architecture is based on the following requirements:
+Software architecture is how the system design is implemented, the chosen technologies and why they were chosen. This solution design and architecture are based on the following requirements:
 
 Functional Requirements
 
@@ -62,22 +35,29 @@ Non-Functional Requirements
 
 ### 1. Client-Side (Frontend) Architecture:
 
+<!--
+- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Chosen for testing the application, with Jest as the testing framework (test runner) and React Testing Library for testing React components.
+-->
+
+- [Javascript] - Chosen as language for its compatibility with other chosen frameworks and its widespread use in web development.
+
 - [React](https://react.dev/) - Chosen as the base frontend framework for building user interfaces due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient, bringing simplicity, robustness and scalability to the software.
 
-- [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing and SEO capabilities, improving performance, scalability and . It is also recommended by React.
+- [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing and SEO capabilities, improving performance and scalability. It is also recommended by React.
   [`(See React recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
+  [`(Why Next14)`](https://nextjs.org/blog/next-14)
 
-- [TypeScript](https://www.typescriptlang.org/) - Enhances code quality and developer productivity by adding static typing to JavaScript, catching errors during development.
+- [TypeScript](https://www.typescriptlang.org/) - Chosen for type safety, Typescript adds static typing to JavaScript, which helps to catch errors during development improving code quality, maintainability and productivity.
 
-- [ContextAPI](https://react.dev/reference/react/createContext) - Chosen for state management because it provides a centralized way to manage state in React applications using native functions, making data sharing between components more manageable and efficient.
+- [ContextAPI](https://react.dev/reference/react/createContext) - Chosen for state management since it provides a centralized way to manage state in React applications using native functions, making data sharing between components more manageable and efficient.
 
-- [SASS](https://sass-lang.com) - A CSS preprocessor that adds features like variables, mixins, and nesting, making styling more organized and maintainable.
+- [SASS](https://sass-lang.com) - Chosen for styling, SASS is a CSS preprocessor that adds features as variables, mixins, and nesting, making styling more organized, scalable and maintainable.
 
 ### 2. Server-Side (Backend) Architecture:
 
 - [Node] - Chosen for creating the API, since it allows for building scalable and efficient server-side applications using JavaScript.
 
-- [Express] - Chosen for its simplicity and flexibility in building web applications and APIs on top of Node.js. It provides a minimalist framework that allows developers to structure their applications in a modular and organized way.
+- [Express] - Chosen for handling API communication due to its simplicity and robustness in building web applications and APIs on top of Node.js. It provides a minimalist framework that allows developers to structure their applications in a modular and organized way.
 
 - [MongoDB] - Chosen for storing and managing data due to its robustness and scalability, with its NoSQL model providing efficient handling of complex data structures and seamless integration with Node.js.
 
