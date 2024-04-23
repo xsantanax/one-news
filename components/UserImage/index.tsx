@@ -1,9 +1,9 @@
-"use client"
-import { useAuth } from "@/hooks/useAuth"
-import styles from "./userImage.module.sass"
-import Image from "next/image"
-import AuthModal from "../AuthModal"
-import router from "next/router"
+'use client'
+import { useAuth } from '@/hooks/useAuth'
+import styles from './userImage.module.sass'
+import Image from 'next/image'
+import AuthModal from '../AuthModal'
+// import router from 'next/router'
 
 const UserImage = () => {
   const {
@@ -14,17 +14,17 @@ const UserImage = () => {
     isAuthModalOpen,
   }: any = useAuth()
 
-  console.log("user", user)
+  console.log('user', user)
 
   return (
     <div className={styles.container}>
       <div className={styles.circle}>
         {loadingUser ? (
           <Image
-            src="/img/dots-white.svg"
+            src='/img/dots-white.svg'
             width={60}
             height={15}
-            alt="loading"
+            alt='loading'
           />
         ) : authenticated ? (
           <Image
@@ -32,9 +32,9 @@ const UserImage = () => {
             height={88}
             className={styles.image}
             // src={user.userData?.image || "/img/user-default.png"}
-            src={user.photoURL || "/img/user-default.png"}
-            alt=""
-            onClick={() => router.push("/user")}
+            src={user.photoURL || '/img/user-default.png'}
+            alt=''
+            // onClick={() => router.push("/user")}
           />
         ) : (
           <div
