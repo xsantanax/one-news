@@ -1,6 +1,6 @@
 ## One News
 
-This is a simple news interface project designed to showcase frontend engineering experience.
+One News is a news platform that gets news from multiple sources, classifies them into events and identify consistencies and inconsistencies across these news.
 
 ### Live Demo
 
@@ -52,6 +52,8 @@ Non-Functional Requirements
 - [ContextAPI](https://react.dev/reference/react/createContext) - Chosen for state management since it provides a centralized way to manage state in React applications using native functions, making data sharing between components more manageable and efficient.
 
 - [SASS](https://sass-lang.com) - Chosen for styling, SASS is a CSS preprocessor that adds features as variables, mixins, and nesting, making styling more organized, scalable and maintainable.
+
+- [Firebase](https://firebase.google.com/) - Chosen for authentication due to its robustness, session management and multiple authentication providers.
 
 ### 2. Server-Side (Backend) Architecture:
 
