@@ -1,22 +1,18 @@
 ## One News
 
-One News is a news platform that gets news from multiple sources, classifies them into events and identify consistencies and inconsistencies across these news.
+One News is a news platform that gets news from multiple sources, classifies them into events and identify consistencies and inconsistencies across these news. (wip)
 
 ### Live Demo
 
 You can check the app live demo at [https://one-news-xsantanax.vercel.app](https://one-news-xsantanax.vercel.app).
 
-You can also run it in your machine. First, run the development server. (`npm run dev` or `yarn dev`)
+You can also run it in your machine. After installing (`npm i`), run the development server. (`npm run dev` or `yarn dev`)
 
 Then, open [http://localhost:3000](http://localhost:3000) in your web browser to see the result.
 
-## System Design and Software Architecture
+## System Design
 
-System design is the system to be built, what the system needs to fulfill it's role, its components and how they are connected.
-
-Software architecture is how the system design is implemented, the chosen technologies and why they were chosen. This solution design and architecture are based on the following requirements:
-
-You can see the system design here: https://miro.com/app/board/uXjVKcPR8m4=/?share_link_id=25333518902
+<!-- You can see the system design here: https://miro.com/app/board/uXjVKcPR8m4=/?share_link_id=25333518902 -->
 
 Functional Requirements
 
